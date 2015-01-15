@@ -16,13 +16,13 @@ public class Subscribers {
 
         @Override
         public void onError(Throwable throwable) {
-            log.error("Subscriber onError() : {}", throwable);
+            log.error("Subscriber onError() : {}", throwable, throwable);
 
         }
 
         @Override
         public void onNext(Object o) {
-            log.info("Subscriber onNext() : {}",o);
+            log.info("Subscriber onNext() : {}", o);
         }
     }
 }
